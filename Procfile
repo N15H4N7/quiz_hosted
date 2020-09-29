@@ -1,0 +1,1 @@
+web: gunicorn EDC_QUIZ.wsgi
