@@ -16,6 +16,4 @@ def question(request):
         'form':AnswerForm(),
         'questions':ques,
     }
-    
-    print(Answer.objects.all())
     return render(request, 'questions/index.html', context)
