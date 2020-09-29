@@ -31,14 +31,14 @@ ALLOWED_HOSTS = ['quiz-hosted.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'home.apps.HomeConfig',
+    'questions.apps.QuestionsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
-    'questions',
 ]
 
 MIDDLEWARE = [
