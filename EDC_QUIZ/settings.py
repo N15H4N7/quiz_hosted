@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-LOGIN_URL = 'login'
+LOGIN_URL = '/'
 
 AUTH_USER_MODEL = "home.User"
 
