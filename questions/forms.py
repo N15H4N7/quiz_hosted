@@ -1,5 +1,12 @@
 from .models import Answer
+from home.models import User
 from django import forms
+
+class user_update(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['points']
+            
 
 class AnswerForm(forms.ModelForm):
     CHOICES = [('A', 'A'),
