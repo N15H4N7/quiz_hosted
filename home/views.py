@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def instructions(request):
-    return render(request, 'home/instructions.html')
+    return render(request, 'home/Instructions.html')
 
 def thankyou(request):
     return render(request, 'home/ThankYou.html')
