@@ -24,7 +24,7 @@ def generate_user(request):
     return redirect('thank-you')
 
 def destroy_user(request):
-    users = User.objects.exclude(start_time=NULL)
+    users = User.objects.exclude(start_time=None)
     if users:
         for user in users:
             user.password = "UIkV1Jyk4V5p6dDOfOZx"
