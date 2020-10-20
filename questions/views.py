@@ -5,6 +5,8 @@ from .forms import AnswerForm
 from .models import Questions, Answer
 from home.models import User
 import datetime
+import xlwt
+
 
 @login_required
 def question(request):
