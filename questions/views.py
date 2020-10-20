@@ -33,7 +33,7 @@ def question(request):
     context = { 
         'form': AnswerForm(),
         'questions': ques,
-        'end_time': (request.user.start_time + datetime.timedelta(minutes=7)).strftime("%B %d, %Y %H:%M:%S")
+        'end_time': (request.user.start_time + datetime.timedelta(minutes=2)).strftime("%B %d, %Y %H:%M:%S")
     }
     
     print(request.user.start_time, context['end_time'])
@@ -60,7 +60,7 @@ def calculate_marks(request):
                     print(x)
                     print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
                     i = 1
-                    for i in range(1,12):
+                    for i in range(1,13):
                         no = "answer" + str(i)
                         ans = answer.__getattribute__(no)
                         print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
