@@ -1,6 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django import HttpResponse
+from django.http import HttpResponse
 from .forms import AnswerForm
 from .models import Questions, Answer
 from home.models import User
