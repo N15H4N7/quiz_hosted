@@ -5,6 +5,7 @@ from django.contrib import messages
 from .models import User
 import json 
 from django.contrib.auth.decorators import login_required
+from django.core.mail import send_mail
 
 @login_required
 def instructions(request):
@@ -22,6 +23,27 @@ def generate_user(request):
                 user =  User(name=u['name'], email=u['email'], password="edcrecruitments")
                 user.save()
     return redirect('thank-you')
+
+def send_emails(request):
+    if request.user.is_superuser: 
+        users = User.objects.filter(start_time = None)
+        if users:
+            for user in users:
+                send_mail(
+                        'EDC-Recruitment Quiz credentials', 
+                        'Hey....', 
+                        'tanya.sood.311@gmail.com',
+                        [user.email],
+                    )
+            return render(request, 'home/mail.html')
+    else:
+        return redirect('login')
+
+def mail(request):
+    if request.user.is_superuser:
+        return render(request, 'home/mail.html')
+    else:
+        return render(request, 'home/login.html')
 
 def destroy_user(request):
     users = User.objects.exclude(start_time=None)
