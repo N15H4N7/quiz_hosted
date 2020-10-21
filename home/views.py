@@ -34,7 +34,9 @@ def send_emails(request):
             for user in users:
                 send_mail(
                         'EDC-Recruitment Quiz credentials', 
-                        'Mail id - as Provided - Password - 1234', 
+                        """Mail id - user.email 
+                        Password - 1234
+                        Quiz Link - https://quiz-hosted.herokuapp.com/""", 
                         'tanya.sood.311@gmail.com',
                         [user.email],
                     )
