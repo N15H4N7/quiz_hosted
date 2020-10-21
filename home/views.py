@@ -7,9 +7,12 @@ import json
 from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 
-@login_required
+
 def instructions(request):
-    return render(request, 'home/Instructions.html')
+    if request.user.is_authenticated:
+        return render(request, 'home/Instructions.html')
+    else:
+        return redirect('login')
 
 def thankyou(request):
     return render(request, 'home/ThankYou.html')

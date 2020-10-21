@@ -8,11 +8,16 @@ import datetime
 import xlwt
 
 
-@login_required
 def question(request):
+    if request.user.is_authenticated:
+        return render(request, 'questions/index.html')
+    else:
+        return redirect('login')
+
     ans=Answer.objects.all()
     for a in ans:
         if request.user == a.candidate :
+
             return render(request, 'home/ThankYou.html')
             break
     if not (request.user.start_time):
@@ -33,7 +38,7 @@ def question(request):
     context = { 
         'form': AnswerForm(),
         'questions': ques,
-        'end_time': (request.user.start_time + datetime.timedelta(minutes=2)).strftime("%B %d, %Y %H:%M:%S")
+        'end_time': (request.user.start_time + datetime.timedelta(minutes=15)).strftime("%B %d, %Y %H:%M:%S")
     }
     
     print(request.user.start_time, context['end_time'])
@@ -121,7 +126,7 @@ def export_answers_xls(request):
         font_style = xlwt.XFStyle()
         font_style.font.bold = True
     
-        columns = ['Email', 'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15']
+        columns = ['Email', 'Name', 'Points', 'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15']
     
         for col_num in range(len(columns)):
             ws.write(row_num, col_num, columns[col_num], font_style) # at 0 row 0 column 
@@ -129,7 +134,7 @@ def export_answers_xls(request):
         # Sheet body, remaining rows
         font_style = xlwt.XFStyle()
     
-        rows = Answer.objects.all().values_list('candidate', 'answer1', 'answer2', 'answer3', 'answer4', 'answer5', 'answer6', 'answer7', 'answer8', 'answer9', 'answer10', 'answer11', 'answer12', 'answer13', 'answer14', 'answer15')
+        rows = Answer.objects.all().values_list('candidate__email', 'candidate__name', 'candidate__points', 'answer1', 'answer2', 'answer3', 'answer4', 'answer5', 'answer6', 'answer7', 'answer8', 'answer9', 'answer10', 'answer11', 'answer12', 'answer13', 'answer14', 'answer15')
         for row in rows:
             row_num += 1
             for col_num in range(len(row)):
