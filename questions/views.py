@@ -9,9 +9,7 @@ import xlwt
 
 
 def question(request):
-    if request.user.is_authenticated:
-        return render(request, 'questions/index.html')
-    else:
+    if not request.user.is_authenticated:
         return redirect('login')
 
     ans=Answer.objects.all()
