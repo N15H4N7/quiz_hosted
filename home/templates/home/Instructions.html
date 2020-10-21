@@ -38,7 +38,7 @@
         }
 
         ul {
-            font-size: 25px;
+            font-size: 22px;
             color: #aeebe7;
             line-height: 30px;
             letter-spacing: 1px;
@@ -70,6 +70,15 @@
                 font-size: 50px;
             }
         }
+        @media (min-height: 655px) and (min-width: 1000px) {
+            body {
+                max-height: 100vh;
+            }
+            .foo{
+                position: absolute !important;
+                bottom: 0 !important;
+            }
+        }
 
         @media (max-width: 450px) {
             .instructions {
@@ -82,7 +91,7 @@
             }
 
             p {
-                font-size: 20px;
+                font-size: 19px;
             }
 
             .row {
@@ -95,7 +104,7 @@
         }
 
         h3 {
-            padding-top: 30px;
+            padding-top: 0px;
         }
     </style>
 
@@ -120,8 +129,8 @@
                     <div class="icon_box_two">
                         <div style="text-align: justify;">
                             <center>
-                                <h3 class="instructions" style="color: #aeebe7; font-weight: 900; text-align: center;">
-                                    INSTRUCTIONS</h3>
+                                <h5 class="instructions" style="color: #aeebe7; font-weight: 900; text-align: center;">
+                                    INSTRUCTIONS</h5>
                             </center>
                             <div
                                 style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
@@ -136,6 +145,11 @@
                                         test.</li>
                                     <li style="list-style-type: disc !important;">Any errors caused due to network
                                         failures are not the responsibility of EDC, TIET.</li>
+                                    <li style="list-style-type: disc !important;">The Aptitude test is of 15 minutes.
+                                    </li>
+                                    <li style="list-style-type: disc !important;">It will automatically get saved and
+                                        terminated even if you haven't finished it.
+                                    </li>
                                 </ul>
                                 <br>
                                 <p>If there are any technical issues feel free to mail us at <span
@@ -157,7 +171,7 @@
         </center>
 
         <div
-            style=" display: flex; flex-direction: row; justify-content: center; margin-top: 50px; width: 100%; background-color: black !important;">
+            style=" display: flex; flex-direction: row; justify-content: center; margin-top: 50px; width: 100%; background-color: black !important;" class="foo">
             <div style="margin-right: 5vw; margin-left: 5vw; padding: 5px;"><a
                     href="https://www.instagram.com/edc_tiet/">
                     <i class="fab fa-instagram" style="color: white; font-size: 50px;"></i></a></div>
