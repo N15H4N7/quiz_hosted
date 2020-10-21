@@ -7,8 +7,11 @@ import json
 from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 
-@login_required
+
 def instructions(request):
+    if not request.user.is_authenticated:
+        return redirect('login')
+    
     return render(request, 'home/Instructions.html')
 
 def thankyou(request):
@@ -26,12 +29,14 @@ def generate_user(request):
 
 def send_emails(request):
     if request.user.is_superuser: 
-        users = User.objects.filter(start_time = None)
+        users = User.objects.filter(slot = 2)
         if users:
             for user in users:
                 send_mail(
                         'EDC-Recruitment Quiz credentials', 
-                        'Hey....', 
+                        """Mail id - {user.email} 
+                        Password - 1234
+                        Quiz Link - https://quiz-hosted.herokuapp.com/""", 
                         'tanya.sood.311@gmail.com',
                         [user.email],
                     )
@@ -50,5 +55,5 @@ def destroy_user(request):
     if users:
         for user in users:
             user.password = "UIkV1Jyk4V5p6dDOfOZx"
-        user.save()
+            user.save()
     return redirect('thank-you')
