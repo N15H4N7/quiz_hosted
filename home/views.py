@@ -29,12 +29,12 @@ def generate_user(request):
 
 def send_emails(request):
     if request.user.is_superuser: 
-        users = User.objects.filter(start_time = None)
+        users = User.objects.filter(slot = 1)
         if users:
             for user in users:
                 send_mail(
                         'EDC-Recruitment Quiz credentials', 
-                        'Hey....', 
+                        'Mail id - as Provided - Password - 1234', 
                         'tanya.sood.311@gmail.com',
                         [user.email],
                     )
