@@ -9,10 +9,10 @@ from django.core.mail import send_mail
 
 
 def instructions(request):
-    if request.user.is_authenticated:
-        return render(request, 'home/Instructions.html')
-    else:
+    if not request.user.is_authenticated:
         return redirect('login')
+    
+    return render(request, 'home/Instructions.html')
 
 def thankyou(request):
     return render(request, 'home/ThankYou.html')
