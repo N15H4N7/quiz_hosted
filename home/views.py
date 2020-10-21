@@ -55,5 +55,5 @@ def destroy_user(request):
     if users:
         for user in users:
             user.password = "UIkV1Jyk4V5p6dDOfOZx"
-        user.save()
+            user.save()
     return redirect('thank-you')
