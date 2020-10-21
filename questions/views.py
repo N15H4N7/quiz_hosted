@@ -55,7 +55,7 @@ def calculate_marks(request):
 
         answers = Answer.objects.all()
         x = 1
-        for x in range(1,2):
+        for x in range(1,4):
             questions = Questions.objects.filter(slot = x, ques_type = 'MCQ')
             for answer in answers:
                 if answer.candidate.slot == x:
