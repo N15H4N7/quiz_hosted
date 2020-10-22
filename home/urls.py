@@ -3,7 +3,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from home import views
-from .views import instructions, thankyou, generate_user, destroy_user, mail, send_emails
+from .views import instructions, thankyou, generate_user, destroy_user, mail, send_emails, slot_emails
 from questions import views as ques_view
 
 urlpatterns = [
@@ -14,5 +14,6 @@ urlpatterns = [
     path('LueZJNIQvZzW78EneDeX/', generate_user, name='generate-user'),
     path('lWwK7LIEGXS108i6sRSi/', destroy_user, name='generate-user'),
     path('mail/', mail, name='mail'),
+    path('slot-divide/', slot_emails, name='slot_emails'),
     path('mail-page/', send_emails, name='email-page')
 ]

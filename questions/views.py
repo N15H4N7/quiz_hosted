@@ -58,7 +58,7 @@ def calculate_marks(request):
             for answer in answers:
                 if answer.candidate.slot == x:
                     i = 1
-                    for i in range(1,13):
+                    for i in range(1,14):
                         no = "answer" + str(i)
                         ans = answer.__getattribute__(no)
                         if ans == questions.filter(ques_no = i).first().correct_ans:
