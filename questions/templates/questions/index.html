@@ -116,16 +116,16 @@
                         var t = deadline - now;
                         var o = over_time - now;
                         var end_time;
-                        console.log(deadline)
-                        console.log(over_time)
-                        console.log()
+                        alert(deadline)
+                        alert(over_time)
+                        alert()
                         if ( t < o ){
                             end_time = t;
                         }
                         else {
                             end_time = o;
                         }
-                        console.log(end_time, o, t)
+                        alert(end_time, o, t)
 
                         var days = Math.floor(end_time / (1000 * 60 * 60 * 24));
                         var hours = Math.floor((end_time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
