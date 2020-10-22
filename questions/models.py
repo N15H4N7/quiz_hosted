@@ -7,7 +7,7 @@ class Questions(models.Model):
 
     ques_no     = models.IntegerField()
     slot        = models.IntegerField(default=0)
-    ques        = models.CharField(max_length=200)
+    ques        = models.CharField(max_length=500)
     option1     = models.CharField(max_length=100, null=True, blank=True)
     option2     = models.CharField(max_length=100, null=True, blank=True)
     option3     = models.CharField(max_length=100, null=True, blank=True)
