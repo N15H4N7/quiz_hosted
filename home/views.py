@@ -43,7 +43,7 @@ Please find the details of of your login for the  Aptitude test below. Kindly re
 
 Link: https://quiz-hosted.herokuapp.com/
 Mail: {user.email}
-Password: 1234
+Password: edcrecruitments
 
 
 All the best! 
