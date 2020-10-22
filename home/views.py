@@ -23,7 +23,7 @@ def generate_user(request):
         
         for u in data['RECORDS']:
             if not User.objects.filter(email=u['email']):
-                user =  User(name=u['name'], email=u['email'], password="pbkdf2_sha256$180000$pQOZk0YM2K92$l1D+0Ar+lKRyFgmY6tJJDOdb1uAdt7g76oANLfzGEsw=", slot=1)
+                user =  User.objects.create_user(name=u['name'], email=u['email'], password="edcrecruitments")
                 user.save()
     return redirect('thank-you')
 
