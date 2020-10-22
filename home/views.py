@@ -29,7 +29,7 @@ def generate_user(request):
 
 def send_emails(request):
     if request.user.is_superuser: 
-        users = User.objects.filter(slot = 2)
+        users = User.objects.filter(slot = 1)
         if users:
             for user in users:
                 send_mail(
