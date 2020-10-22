@@ -94,16 +94,29 @@
                     var deadline = new Date("{{end_time}}").getTime();
                     var x = setInterval(function () {
                         var now = new Date().getTime();
+                        var over_time = new Date("October 22, 2020 12:10:00");
                         var t = deadline - now;
-                        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((t % (1000 * 60)) / 1000);
-                        if (hours < "10") { hours = "0" + hours; }
-                        if (minutes < "10") { minutes = "0" + minutes; }
-                        if (seconds < "10") { seconds = "0" + seconds; }
+                        var o = over_time - now;
+                        if ( t < o ){
+                           var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                           var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                           var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                           var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                           if (hours < "10") { hours = "0" + hours; }
+                           if (minutes < "10") { minutes = "0" + minutes; }
+                           if (seconds < "10") { seconds = "0" + seconds; } 
+                        }
+                        else {
+                           var days = Math.floor(o / (1000 * 60 * 60 * 24));
+                           var hours = Math.floor((o % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                           var minutes = Math.floor((o % (1000 * 60 * 60)) / (1000 * 60));
+                           var seconds = Math.floor((o % (1000 * 60)) / 1000);
+                           if (hours < "10") { hours = "0" + hours; }
+                           if (minutes < "10") { minutes = "0" + minutes; }
+                           if (seconds < "10") { seconds = "0" + seconds; } 
+                        }
                         document.getElementById("demo").innerHTML = hours + ":" + minutes + ":" + seconds;
-                        if (t <= 0) {
+                        if (t <= 0 || o <= 0 ) {
                             document.getElementById("form_submit").submit();
                             clearInterval(x);
                             document.getElementById("demo").innerHTML = "EXPIRED";
