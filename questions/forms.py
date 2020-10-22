@@ -26,7 +26,7 @@ class AnswerForm(forms.ModelForm):
     answer10    = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect, required=False)
     answer11    = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect, required=False)
     answer12    = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect, required=False)
-    answer13    = forms.CharField(widget=forms.Textarea, required=False)
+    answer13    = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect, required=False)
     answer14    = forms.CharField(widget=forms.Textarea, required=False)
     answer15    = forms.CharField(widget=forms.Textarea, required=False)
 

@@ -227,6 +227,8 @@ h3, h4{
     background-color: #afe0dd;
     border-color: #afe0dd;
     box-shadow: 0 8px 15px rgba(146, 166, 226, 0.2);
+    cursor: pointer !important;
+
 }
 
 .sidebar ul .color_change {
