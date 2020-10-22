@@ -73,11 +73,19 @@
             min-height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
             flex-direction: column;
         }
     </style>
-
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var width = $(window).width();
+            $(window).resize(function () {
+                if (width <= 720) {
+                $(".wrapper").addClass('collapse');
+            }
+            });
+        });
+    </script>
 </head>
 
 <body oncopy="return false" oncut="return false" onpaste="return false">
@@ -240,7 +248,7 @@
                                     <a href="#q{{ question.has_next }}" class="btn btn-primary">Next</a>
                                 {% endif %}
                                 {% if question.ques_no == 15 %}
-                                    <input type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 {% endif %}
                             </div>
                         </div>
@@ -256,7 +264,7 @@
                             </div>
 
                             <div class="ques">
-                                <textarea id="txt{{ question.ques_no }}" type="text" rows="5" name="answer{{ question.ques_no }}"></textarea>
+                                <textarea id="txt{{ question.ques_no }}" type="text" rows="2" name="answer{{ question.ques_no }}"></textarea>
                             </div>
                             <div class="pt-2" style="display: inline-block;">
                                 {% if question.has_prev %}

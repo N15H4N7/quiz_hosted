@@ -63,7 +63,7 @@ def calculate_marks(request):
                     print(x)
                     print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
                     i = 1
-                    for i in range(1,13):
+                    for i in range(1,14):
                         no = "answer" + str(i)
                         ans = answer.__getattribute__(no)
                         print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
