@@ -34,9 +34,23 @@ def send_emails(request):
             for user in users:
                 send_mail(
                         'EDC-Recruitment Quiz credentials', 
-                        """Mail id - {user.email} 
-                        Password - 1234
-                        Quiz Link - https://quiz-hosted.herokuapp.com/""", 
+                        f"""
+Dear {user.name},
+
+Greetings from Entrepreneurship Development Cell, TIET!
+
+Please find the details of of your login for the  Aptitude test below. Kindly read the instructions carefully before starting the test. 
+
+Link: https://quiz-hosted.herokuapp.com/
+Mail: {user.email}
+Password: 1234
+
+
+All the best! 
+
+Regards, 
+Team EDC
+                        """, 
                         'tanya.sood.311@gmail.com',
                         [user.email],
                     )
