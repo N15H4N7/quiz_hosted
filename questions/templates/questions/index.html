@@ -111,8 +111,8 @@
                 <script>
                     var deadline = new Date("{{end_time}}").getTime();
                     var x = setInterval(function () {
-                        var now = new Date().getTime();
-                        var over_time = new Date("October 22, 2020 23:45:00");
+                        var now = new Date().getTime(Date.UTC());
+                        var over_time = new Date("October 24, 2020 23:45:00");
                         var t = deadline - now;
                         var o = over_time - now;
                         var end_time;
