@@ -23,7 +23,7 @@ def question(request):
         u.start_time = datetime.datetime.now()
         u.save()
     
-    ques = Questions.objects.filter(slot=2).order_by("ques_no")
+    ques = Questions.objects.filter(slot=3).order_by("ques_no")
 
     if request.method == 'POST':
         form = AnswerForm(request.POST)
