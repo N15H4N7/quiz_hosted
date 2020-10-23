@@ -1,7 +1,279 @@
 {
     "RECORDS": [
         {
-            "name": "Mudit Saxena ",
+            "name": "Mukesh Sood ",
+            "email": "mukeshsood17@gmail.com"
+        },
+        {
+            "name": "Arnav Goyal",
+            "email": "garnav2002@gmail.com"
+        },
+        {
+            "name": "ROHAN KAPOOR",
+            "email": "kapoorrk0005@gmail.com"
+        },
+        {
+            "name": "Jigarjit Singh",
+            "email": "mannatlamba38@gmail.com"
+        },
+        {
+            "name": "Manav Bansal",
+            "email": "manavbansal3110@gmail.com"
+        },
+        {
+            "name": "Vishavjeet Singh",
+            "email": "22vishav@gmail.com"
+        },
+        {
+            "name": "Rohan khatri",
+            "email": "itss.rohankhatri@gmail.com"
+        },
+        {
+            "name": "samarth babbar",
+            "email": "bsamarth56@gmail.com"
+        },
+        {
+            "name": "Agamjot Singh",
+            "email": "agamjot1204@gmail.com"
+        },
+        {
+            "name": "Yuvraj Singh",
+            "email": "yuvi1jan@gmail.com"
+        },
+        {
+            "name": "Atul Thakur",
+            "email": "atulthakur9076@gmail.com"
+        },
+        {
+            "name": "Nandakrishna S",
+            "email": "nandakrishnasajeev@gmail.com"
+        },
+        {
+            "name": "Anchit Rana",
+            "email": "anchitrana4@gmail.com"
+        },
+
+        {
+            "name": "Pranjal Dhir",
+            "email": "pranjaldhir5@gmail.com"
+        },
+        {
+            "name": "Tanishq",
+            "email": "kalpana_sethi@yahoo.com"
+        },
+        {
+            "name": "Samarth Jain",
+            "email": "jainsamarth786@gmail.com"
+        },
+        {
+            "name": "Srimon Ghosh",
+            "email": "ghoshsrimon@gmail.com"
+        },
+
+        {
+            "name": "Bhavika arora",
+            "email": "arorabhavika2002@gmail.com"
+        },
+        {
+            "name": "Samik Malhotra",
+            "email": "samikmalhotra66@gmail.com"
+        },
+        {
+            "name": "Sarishti chopra",
+            "email": "sarishtichopra.sci@gmail.com"
+        },
+        {
+            "name": "Arpit Taneja",
+            "email": "arpittaneja009@gmail.com"
+        },
+        {
+            "name": "Akshit Mehrotra",
+            "email": "akshitmehrotra0@gmail.com"
+        },
+        {
+            "name": "Ashish Kakkar",
+            "email": "ashishkakkar18@gmail.com"
+        },
+        {
+            "name": "Gurleen Kaur",
+            "email": "parikabhandari@gmail.com"
+        },
+        {
+            "name": "Jagrit Aggarwal",
+            "email": "agarwal.jagrit@gmail.com"
+        },
+        {
+            "name": "Tushar Kapoor",
+            "email": "kapoorjewel2009@gmail.com"
+        },
+        {
+            "name": "Ayush Agarwal",
+            "email": "agarwal.ayush.0109@gmail.com"
+        },
+        {
+            "name": "Lakshay bhardwaj",
+            "email": "bhardwajlakshay.lb@gmail.com"
+        },
+
+
+        {
+            "name": "Saurabh Thakur ",
+            "email": "saurabhthakurmeerut@gmail.com"
+        },
+
+        {
+            "name": "Shashank Mishra",
+            "email": "smmishra1210@gmail.com"
+        },
+        {
+            "name": "Prateek Rustagi",
+            "email": "prateekrustagi2001@gmail.com"
+        },
+        {
+            "name": "Sankalp Rana",
+            "email": "rana.sankalp00@gmail.com"
+        },
+        {
+            "name": "VANSH OBEROI",
+            "email": "voberoi891@gmail.com"
+        },
+        {
+            "name": "Neeraj Sandal ",
+            "email": "neerajsandal379@gmail.com"
+        },
+        {
+            "name": "TANISH GARG",
+            "email": "kumartanish95@gmail.com"
+        },
+        {
+            "name": "Gaurav Mehta",
+            "email": "gauravmehta2801@gmail.con"
+        },
+        {
+            "name": "Virendra Pratap Rathore ",
+            "email": "vpsrathore2002@gmail.com"
+        },
+        {
+            "name": "Aditi Sharma ",
+            "email": "thesamralacmsltd@gmail.com"
+        },
+        {
+            "name": "Pauravi Nimaiyar",
+            "email": "pauravinimaiyar@gmail.com"
+        },
+
+        {
+            "name": "Harshit Taneja",
+            "email": "taneja.harshit2791@gmail.com"
+        },
+        {
+            "name": "Raghav singh",
+            "email": "raghavsingh0224@gmail.com"
+        },
+        {
+            "name": "Aditya Kalhan",
+            "email": "adityakalhan2002@gmail.com"
+        },
+        {
+            "name": "Saksham",
+            "email": "sakshambatra16@gmail.com"
+        },
+
+        {
+            "name": "Raghav Khullar",
+            "email": "khullarraghav39@gmail.com"
+        },
+        {
+            "name": "Shradha Sood ",
+            "email": "shradhasood0802@gmail.com"
+        },
+        {
+            "name": "Raghav Khullar",
+            "email": "khullarraghav39@gmail.com"
+        },
+        {
+            "name": "Manpreet kaur",
+            "email": "mkaurfbd@gmail.com"
+        },
+        {
+            "name": "Ujjwal Singh",
+            "email": "ujjwal.dhounchak@gmail.com"
+        },
+        {
+            "name": "ANGAD BAGGA",
+            "email": "angad.bagga02@gmail.com"
+        },
+        {
+            "name": "Heena Malhotra",
+            "email": "heenaheena022@gmail.com"
+        },
+        {
+            "name": "Pradyun Sharma",
+            "email": "pradyunsharma@gmail.com"
+        },
+
+        {
+            "name": "Rushil Kumar",
+            "email": "rushilkumar01@gmail.com"
+        },
+        {
+            "name": "Anmol Parmar",
+            "email": "oniparmar786@gmail.com"
+        },
+        {
+            "name": "Samarjot Singh Saini",
+            "email": "sainisamar117@gmail.com"
+        },
+        {
+            "name": "Himangi Sharma ",
+            "email": "sharmahimangi04@gmail.com"
+        },
+        {
+            "name": "Vishesh nayyar",
+            "email": "vishesh.nayyar234@gmail.com"
+        },
+        {
+            "name": "Tushar Singh",
+            "email": "tusharsingh22112001@icloud.com"
+        },
+        {
+            "name": "Semanpreet Singh",
+            "email": "semanlubana@gmail.com"
+        },
+        {
+            "name": "Sunidhi Suri",
+            "email": "sunidhisuri02@gmail.com"
+        },
+        {
+            "name": "Yatin Kamal",
+            "email": "yatinkamal02@gmail.com"
+        },
+        {
+            "name": "PRATEEK   SREEHARI",
+            "email": "prateek4702@gmail.com"
+        },
+        {
+            "name": "Prabhjot Singh",
+            "email": "prabhjot7531@gmail.com"
+        },
+        {
+            "name": "Navneet Singh",
+            "email": "navneetdhillon12345678@gmail.com"
+        },
+        {
+            "name": "Prisha kwatra ",
+            "email": "prishakwatra02@gmail.com"
+        },
+        {
+            "name": "Mukesh Sood",
+            "email": "mukeshsood17@gmail.com"
+        },
+        {
+            "name": "Navdeep Singh ",
+            "email": "seemaverma.2437@gmail.com"
+        },
+        {
+            "name": "Mudit Saxena",
             "email": "mudit.saxena22@gmail.com"
         },
         {
@@ -20,17 +292,138 @@
             "name": "Ketan",
             "email": "ketangoyal116@gmail.com"
         },
-        {
             "name": "Aryaman Tiwari",
             "email": "aryamant21@gmail.com"
         },
-        {
+		{
             "name": "Divye Kapoor",
             "email": "divye.kapoor0000@gmail.com"
         },
-        {
+		{
             "name": "Rashi",
             "email": "goelrashi1710@gmail.com"
+        },
+        {
+            "name": "Manmeet Singh ",
+            "email": "manmeet0504@gmail.com"
+        },
+        {
+            "name": "Anmol",
+            "email": "anmolmthr02@gmail.com"
+        },
+        {
+            "name": "Sunandan Gupta",
+            "email": "sunags2@gmail.com"
+        },
+        {
+            "name": "Eshaan Trehan",
+            "email": "eshaan.trehan@gmail.com"
+        },
+        {
+            "name": "Gaurav Verma",
+            "email": "gaurav.verma1014@gmail.com"
+        },
+        {
+            "name": "Surabhi Mishra",
+            "email": "surabhi.mishra96@gmail.com"
+        },
+        {
+            "name": "Priyansh Aggarwal",
+            "email": "priyanshaggarwal1327@gmail.com"
+        },
+        {
+            "name": "kunal sehrawat",
+            "email": "sehrawat.kunal.kunal@gmail.com"
+        },
+        {
+            "name": "Abhilasha Marwah",
+            "email": "abhilashamarwah12@gmail.com"
+        },
+        {
+            "name": "Avneet Kaur",
+            "email": "kyrasingh86@gmail.com"
+        },
+        {
+            "name": "Jatin Kumar ",
+            "email": "harneksingh11116666@gmail.com"
+        },
+        {
+            "name": "sukhraj",
+            "email": "sukhjhinjer@gmail.com"
+        },
+        {
+            "name": "Shaunak Attri",
+            "email": "shaunakattri@gmail.com"
+        },
+        {
+            "name": "Harinderjit singh ",
+            "email": "harinderjit91218@gmail.com"
+        },
+        {
+            "name": "Manan Vij",
+            "email": "manansdsh@gmail.com"
+        },
+        {
+            "name": "ADITYA BHALLA",
+            "email": "adityabhalla1@yahoo.com"
+        },
+
+        {
+            "name": "AGRIMA GUPTA",
+            "email": "guptaagrima13@gmail.com"
+        },
+        {
+            "name": "Aryan Mallik",
+            "email": "mail2aryanmallik@gmail.com"
+        },
+        {
+            "name": "Komal chaudhary",
+            "email": "komalch2317@gmail.com"
+        },
+        {
+            "name": "Tejasvi S Jain",
+            "email": "tejasvisjain2514@gmail.com"
+        },
+        {
+            "name": " Lokesh Prabhakar",
+            "email": "cgrp.ldh.31@gmail.com"
+        },
+        {
+            "name": "harshal sethi",
+            "email": "sharshal314@gmail.com"
+        },
+        {
+            "name": "Riya",
+            "email": "griya3122@gmail.com"
+        },
+        {
+            "name": "Varun",
+            "email": "varunprabhakar92@gmail.com"
+        },
+
+        {
+            "name": "Dikshant Chhabra",
+            "email": "chhabradikshant@gmail.com"
+        },
+        {
+            "name": "Sanket ",
+            "email": "navin66203@yahoo.in"
+        },
+        {
+            "name": "Swayam Mehta",
+            "email": "swayam88hz@gmail.com"
+        },
+        {
+            "name": "Shourya Dewan",
+            "email": "anuradhadewan293@gmail.com"
+        },
+        {
+            "name": "Jasmine Batra",
+            "email": "jasbatra01@gmail.com"
+        },
+        {
+            "name": "Siddharth Trivedi ",
+            "email": "sidtrivedi100@gmail.com"
         }
     ]
 }
