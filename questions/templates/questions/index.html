@@ -112,7 +112,7 @@
                     var deadline = new Date("{{end_time}}").getTime();
                     var x = setInterval(function () {
                         var now = new Date().getTime();
-                        var over_time = new Date("October 24, 2020 10:20:00");
+                        var over_time = new Date("October 22, 2020 23:45:00");
                         var t = deadline - now;
                         var o = over_time - now;
                         var end_time;
@@ -122,7 +122,6 @@
                         else {
                             end_time = o;
                         }
-                        
                         var days = Math.floor(end_time / (1000 * 60 * 60 * 24));
                         var hours = Math.floor((end_time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                         var minutes = Math.floor((end_time % (1000 * 60 * 60)) / (1000 * 60));
