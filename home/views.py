@@ -17,13 +17,33 @@ def instructions(request):
 def thankyou(request):
     return render(request, 'home/ThankYou.html')
 
-def generate_user(request):
+def generate_user1(request):
     with open('Slot1.json', encoding="utf8") as file: 
         data = json.load(file) 
         
         for u in data['RECORDS']:
             if not User.objects.filter(email=u['email']):
                 user =  User.objects.create_user(name=u['name'], email=u['email'], slot=1, password="1ForAll")
+                user.save()
+    return redirect('thank-you')
+
+def generate_user2(request):
+    with open('Slot2.json', encoding="utf8") as file: 
+        data = json.load(file) 
+        
+        for u in data['RECORDS']:
+            if not User.objects.filter(email=u['email']):
+                user =  User.objects.create_user(name=u['name'], email=u['email'], slot=2, password="IHadADream")
+                user.save()
+    return redirect('thank-you')
+
+def generate_user3(request):
+    with open('Slot3.json', encoding="utf8") as file: 
+        data = json.load(file) 
+        
+        for u in data['RECORDS']:
+            if not User.objects.filter(email=u['email']):
+                user =  User.objects.create_user(name=u['name'], email=u['email'], slot=3, password="ProveThemWrong")
                 user.save()
     return redirect('thank-you')
 
