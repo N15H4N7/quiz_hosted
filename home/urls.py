@@ -3,7 +3,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from home import views
-from .views import instructions, thankyou, generate_user, destroy_user, mail, send_emails, slot_emails
+from .views import instructions, thankyou, destroy_user, mail, send_emails, slot_emails, generate_user1, generate_user2, generate_user3
 from questions import views as ques_view
 
 urlpatterns = [
