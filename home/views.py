@@ -63,7 +63,7 @@ Please find the details of of your login for the  Aptitude test below. Kindly re
 
 Link: https://quiz-hosted.herokuapp.com/
 Mail: {user.email}
-Password: edcrecruitments
+Password: 1ForAll
 
 
 All the best! 
@@ -71,7 +71,7 @@ All the best!
 Regards, 
 Team EDC
                         """, 
-                        'tanya.sood.311@gmail.com',
+                        'tuedcell@gmail.com',
                         [user.email],
                     )
             return render(request, 'home/mail.html')
@@ -85,7 +85,7 @@ def mail(request):
         return render(request, 'home/login.html')
 
 def destroy_user(request):
-    users = User.objects.exclude(start_time=None).exclude(email="nishant@gupta.com").exclude(email="tanya.sood.311@gmail.com").exclude(email="kajal@edctiet.com")
+    users = User.objects.exclude(start_time=None).exclude(email="nishant@gupta.com").exclude(email="edc@gupta.com").exclude(email="tanya.sood.311@gmail.com").exclude(email="kajal@edctiet.com")
     if users:
         for user in users:
             print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
