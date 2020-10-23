@@ -18,12 +18,12 @@ def thankyou(request):
     return render(request, 'home/ThankYou.html')
 
 def generate_user(request):
-    with open('edcSlot.json', encoding="utf8") as file: 
+    with open('Slot1.json', encoding="utf8") as file: 
         data = json.load(file) 
         
         for u in data['RECORDS']:
             if not User.objects.filter(email=u['email']):
-                user =  User.objects.create_user(name=u['name'], email=u['email'], slot=1, password="edcrecruitments")
+                user =  User.objects.create_user(name=u['name'], email=u['email'], slot=1, password="1ForAll")
                 user.save()
     return redirect('thank-you')
 
