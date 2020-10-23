@@ -65,7 +65,7 @@ def mail(request):
         return render(request, 'home/login.html')
 
 def destroy_user(request):
-    users = User.objects.exclude(start_time=None).exclude(email="nishant@gupta.com").exclude(email="tanya.sood.311@gmail.com")
+    users = User.objects.exclude(start_time=None).exclude(email="nishant@gupta.com").exclude(email="tanya.sood.311@gmail.com").exclude(email="kajal@edctiet.com")
     if users:
         for user in users:
             print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
@@ -97,7 +97,7 @@ You will get an email 5 minutes prior to the test containing your unique id and 
 
 Note that your slot time for the test is 10:00pm - 10:20pm
 
-Portal Link :- https://quiz-hosted.herokuapp.com/
+Portal Link :- https://quiz.edctiet.com/
 
 Psych yourself up as its time to enter into a new domain where a plethora of opportunities are waiting for you. Clear all the hurdles and join us at EDC.
 Good Luck.
