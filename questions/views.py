@@ -87,7 +87,7 @@ def export_answers_xls(request):
         font_style = xlwt.XFStyle()
         font_style.font.bold = True
     
-        columns = ['Email', 'Name', 'Points', 'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15']
+        columns = ['Email', 'Name', 'Points', 'Slot',  'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15']
     
         for col_num in range(len(columns)):
             ws.write(row_num, col_num, columns[col_num], font_style) # at 0 row 0 column 
@@ -95,7 +95,7 @@ def export_answers_xls(request):
         # Sheet body, remaining rows
         font_style = xlwt.XFStyle()
     
-        rows = Answer.objects.all().values_list('candidate__email', 'candidate__name', 'candidate__points', 'answer1', 'answer2', 'answer3', 'answer4', 'answer5', 'answer6', 'answer7', 'answer8', 'answer9', 'answer10', 'answer11', 'answer12', 'answer13', 'answer14', 'answer15')
+        rows = Answer.objects.all().values_list('candidate__email', 'candidate__name', 'candidate__points', 'candidate__slot' , 'answer1', 'answer2', 'answer3', 'answer4', 'answer5', 'answer6', 'answer7', 'answer8', 'answer9', 'answer10', 'answer11', 'answer12', 'answer13', 'answer14', 'answer15')
         for row in rows:
             row_num += 1
             for col_num in range(len(row)):
